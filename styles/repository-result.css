@@ -1,0 +1,32 @@
+.repositories__result .btn{
+    min-width: fit-content;
+}
+.repositories__result a{
+    text-decoration: none;
+}
+.repositories__result a:hover{
+    text-decoration: underline;
+}
+.repositories__result h3{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0;
+}
+.repositories__result{
+    border-top: 1px solid #e1e4e8;
+    padding: 1.5rem 0 1.5rem 0
+}
+.repositories__result p{
+    color: var(--text-color-grey);
+    margin: 8px 0 8px;
+}
+.repositories__footer span, .repositories__footer svg{
+    margin-right: 4px;
+}
+.repositories__footer{
+    font-size: 12px;
+    color: var(--text-color-grey);
+}
+.repositories__footer div{
+    margin-right: 16px;
+}

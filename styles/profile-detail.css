@@ -1,0 +1,66 @@
+.profile svg{
+    color: #6a737d;
+}
+.profile_avatar, .profile__details{
+    position: relative;
+    top: -30px
+}
+.profile_avatar{
+    display: flex;
+    z-index: 8;
+}
+.profile__name h1{
+    font-size: 1.625rem;
+    margin: 0;
+    line-height: 1.25;
+}
+.profile__name span{
+    color: #666;
+    font-size: 1.25rem;
+    line-height: 1.25;
+}
+.profile_bio{
+    font-size: 1rem;
+    margin: 0 0 16px 0;
+}
+.profile__figures{
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+.profile__figures span{
+    margin: 0 4px 0 4px;
+}
+.profile__figures div span{
+    font-weight: 600;
+    display: inline-block;
+}
+.profile__figures div{
+    display: flex;
+    align-items: center;
+}
+.profile__location{
+    margin-top: 16px;
+}
+.profile__location div{
+    display: flex;
+    align-items: center;
+}
+.profile__location div span{
+    font-size: 14px;
+}
+.profile__location div svg{
+    margin-right: 7px;
+}
+@media (max-width: 768px) {
+    .profile{
+        margin-top: 20px;
+    }
+    .profile_avatar, .profile__details{
+        position: initial;
+    }
+    .profile_avatar img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+}

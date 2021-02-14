@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+</head>
+<body id="app">
+    <!-- Header Nav -->
+    <header class="header pl-16 pr-16">
+        <div class="header__brand">
+            <a href="/">
+                <span class="iconify" data-icon="octicon:mark-github-16" data-inline="false" data-width="32" data-height="32"></span>
+            </a>
+        </div>
+        <div class="header__content">
+            <form class="header__search">
+                <input type="search" class="" aria-label="Enter your search term" placeholder="Search or jump to…" />
+            </form>
+            <nav class="header__nav">
+                <ul>
+                    <li class="">
+                        <a href="javascript:;">
+                            Pull requests
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;">
+                            Issues
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;">
+                            Marketplace
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;">
+                            Explore
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__nav header__nav-right">
+                <ul>
+                    <li class="">
+                        <a href="javascript:;" class="p-relative" aria-label="View Notifications" title="View Notifications">
+                            <span class="unread-indicator"></span>
+                            <span class="iconify"
+                                data-icon="octicon:bell-16"
+                                data-inline="false"
+                                data-width="16"
+                                data-height="16">
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;" aria-label="Add New Repository" title="Add New Repository">
+                            <span class="iconify"
+                                data-icon="octicon:plus-16"
+                                data-inline="false"
+                                data-width="16"
+                                data-height="16">
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;" aria-label="View your profile" title="View your profile">
+                            <!-- user your profile image -->
+                            <img src="https://avatars2.githubusercontent.com/u/28654450?s=60&v=4"
+                                height="20"
+                                width="20"
+                                alt="User Avatar"
+                                class="avatar" 
+                            />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tab Nav -->
+    <div class="tabs__wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-9">
+                    <nav class="tabs__nav">
+                        <ul class="">
+                            <li>
+                                <a href="javascript:;">
+                                    <span class="iconify"
+                                        data-icon="octicon:book-16"
+                                        data-inline="false"
+                                        data-width="16"
+                                        data-height="16">
+                                    </span>
+                                    Overview
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="active">
+                                    <span class="iconify"
+                                        data-icon="octicon:repo-16"
+                                        data-inline="false"
+                                        data-width="16"
+                                        data-height="16">
+                                    </span>
+                                    Repositories
+                                    <span class="badge">
+                                        10
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <span class="iconify"
+                                        data-icon="octicon:project-16"
+                                        data-inline="false"
+                                        data-width="16"
+                                        data-height="16">
+                                    </span>
+                                    Projects
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <span class="iconify"
+                                        data-icon="octicon:package-16"
+                                        data-inline="false"
+                                        data-width="16"
+                                        data-height="16">
+                                    </span>
+                                    Projects
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            
+            <!-- Profile Details -->
+            <div class="col-3">
+                <div class="profile">
+                    <a href="javascript:;" class="profile_avatar">
+                        <img src="https://avatars.githubusercontent.com/u/28654450?v=4"
+                            alt="profile avatar"
+                            class="avatar"
+                            width="260"
+                            height="260" 
+                        />
+                    </a>
+                    <div class="profile__details">
+                        <div class="profile__name pt-16 pb-16">
+                            <h1>Racheal Orukele</h1>
+                            <span>Racheal</span>
+                        </div>
+                        <p class="profile_bio">
+                            The coolest
+                        </p>
+                        <button class="btn">
+                            Edit Profile
+                        </button>
+                        <div class="d-flex align-item-center profile__figures">
+                            <span class="iconify"
+                                data-icon="octicon:people-16"
+                                data-inline="false"
+                                data-width="16"
+                                data-height="16">
+                            </span>
+                                <span class="count">5</span> followers
+                                <span>·</span>
+                            <div>
+                                <span class="count">20</span> following
+                            </div>
+                                <span>·</span>
+                            <div>
+                                <span class="iconify"
+                                    data-icon="octicon:repo-16"
+                                    data-inline="false"
+                                    data-width="16"
+                                    data-height="16">
+                                </span>
+                                <span class="count">100</span> Repos
+                            </div>
+                            </div>
+                            <div class="profile__location">
+                                <div>
+                                    <span class="iconify"
+                                        data-icon="octicon:location-16"
+                                        data-inline="false"
+                                        data-width="16"
+                                        data-height="16">
+                                    </span>
+                                    My head
+                                </div>
+                                <div>
+                                    <span class="iconify"
+                                        data-icon="octicon:mail-16"
+                                        data-inline="false"
+                                        data-width="16"
+                                        data-height="16">
+                                    </span>
+                                    dummy@mail.com
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <!-- Repositories Details -->
+            <div class="col-9">
+                <div class="" id="repositories">
+                    <div class="repositories__filter" >
+                        <form action="">
+                            <input type="text" class="input" placeholder="Find a repository..." aria-label="Find a repository"/>
+                        </form>
+                        <div class="d-flex">
+                            <button class="btn">
+                                <span>Type:</span> All
+                            </button>
+                            <button class="btn">
+                                <span>Language:</span> All
+                            </button>
+                            <a class="btn btn--green">
+                                <span class="iconify"
+                                    data-icon="octicon:repo-16"
+                                    data-inline="true"
+                                    data-width="16"
+                                    data-height="16">
+                                </span>
+                                New
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repositories__result">
+                    <div class="d-flex justify-content-between w-100">
+                        <a href="javascript:;">
+                            <h3>javascript 30</h3>
+                        </a>
+                        <button class="btn">
+                            <span class="iconify" 
+                                data-icon="octicon:star-16"
+                                data-inline="false"
+                                data-width="16"
+                                data-height="16">
+                            </span>
+                            Star
+                        </button>
+                    </div>
+                    <p>
+                        The best repo
+                    </p>
+                    <div class="d-flex repositories__footer">
+                        <div>
+                            <span class="lang-indicator" style="background-color: #f1e05a;"></span> javascript
+                        </div>
+                        <div>
+                            <span class="iconify"
+                                data-icon="octicon:star-16"
+                                data-inline="true"
+                                data-width="16"
+                                data-height="16">
+                            </span> 
+                            2
+                        </div>
+                        <div>
+                            <span class="iconify"
+                                data-icon="octicon:repo-forked-16"
+                                data-inline="true"
+                                data-width="16"
+                                data-height="16">
+                            </span>
+                                2
+                        </div>
+                        <div>
+                            <span class="iconify"
+                                data-icon="octicon:repo-forked-16"
+                                data-inline="true"
+                                data-width="16"
+                                data-height="16">
+                            </span>
+                                2 mins
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</html>

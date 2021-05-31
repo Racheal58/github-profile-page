@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" type="text/css" href="./styles/index.css">
 </head>
 <body id="app">
     <!-- Loader -->
-    <div id="loader"></div>
+    <!-- <div id="loader"></div> -->
 
     <div class="parent">
         <!-- Header Nav -->
@@ -85,101 +85,23 @@
             </div>
         </header>
     
-        <!-- Tab Nav -->
-        <div class="tabs__wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-9">
-                        <nav class="tabs__nav">
-                            <ul class="">
-                                <li>
-                                    <a href="javascript:;">
-                                        <span class="iconify"
-                                            data-icon="octicon:book-16"
-                                            data-inline="false"
-                                            data-width="16"
-                                            data-height="16">
-                                        </span>
-                                        Overview
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;" class="active">
-                                        <span class="iconify"
-                                            data-icon="octicon:repo-16"
-                                            data-inline="false"
-                                            data-width="16"
-                                            data-height="16">
-                                        </span>
-                                        Repositories
-                                        <span class="badge"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;" class="">
-                                        <span class="iconify"
-                                            data-icon="octicon:project-16"
-                                            data-inline="false"
-                                            data-width="16"
-                                            data-height="16">
-                                        </span>
-                                        Projects
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;" class="">
-                                        <span class="iconify"
-                                            data-icon="octicon:package-16"
-                                            data-inline="false"
-                                            data-width="16"
-                                            data-height="16">
-                                        </span>
-                                        Projects
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
         <div class="container">
             <div class="row">
-                <!-- Profile Details -->
-                <div class="col-3">
-                    <div class="profile">
-                        <a href="javascript:;" class="profile_avatar">
-                            <img src=""
-                                alt="profile avatar"
-                                class="avatar"
-                                width="260"
-                                height="260" 
+                <div class="col-12">
+                    <form class="user_search" action="profile.html" method="GET">
+                        <label for="username">Find a user:</label>
+                        <div class="d-flex">
+                            <input 
+                                id="username" 
+                                type="text"
+                                class="input"
+                                placeholder="Enter a username..."
+                                aria-label="Enter a username"
+                                name="username"
                             />
-                        </a>
-                        <div class="profile__details">
-                            <div class="profile__name pt-16 pb-16">
-                                <h1 class="full_name"></h1>
-                                <span class="username"></span>
-                            </div>
-                            <p class="profile_bio"></p>
-                            <div class="d-flex align-item-center profile__figures"></div>
+                            <button class="ml-8 user_search_button">Preview</button>
                         </div>
-                    </div>
-                </div>
-    
-                <!-- Repositories Details -->
-                <div class="col-9">
-                    <div class="" id="repositories">
-                        <div class="repositories__filter" >
-                            <form action="">
-                                <input type="text" class="input" placeholder="Find a repository..." aria-label="Find a repository"/>
-                            </form>
-                        </div>
-                    </div>
-    
-                    <section class="repositories_section"></section>
+                    </form>
                 </div>
             </div>
         </div>
@@ -187,5 +109,7 @@
 </body>
 
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-<script src="./index.js"></script>
+<script>
+    document.querySelector('.parent').style.display = 'block';
+</script>
 </html>

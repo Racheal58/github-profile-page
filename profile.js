@@ -1,10 +1,12 @@
+const search = window.location.search;
+const username = search.split('=')[1]
 
 fetch('https://api.github.com/graphql', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', authorization: `Bearer 5c51f42f446d9a0c28b5643bc74a8c3780adb3e3` },
+    headers: { 'Content-Type': 'application/json', authorization: `Bearer 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` },
     body: JSON.stringify({ query: `
     query {
-        user(login: "racheal58") {
+        user(login: "${username}") {
             id
             url
             name
@@ -42,6 +44,11 @@ fetch('https://api.github.com/graphql', {
 })
 .then(res => res.json())
 .then(res => {
+    if(res.errors && res.errors.length > 0){
+        alert('USER NOT FOUND');
+        window.location.href="index.html"
+        return;
+    }
     document.querySelector(".full_name").innerHTML = res.data.user.name;
     document.querySelector('.username').innerHTML = res.data.user.login;
     document.querySelector('.profile_bio').innerHTML = res.data.user.bioHTML;

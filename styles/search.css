@@ -1,0 +1,24 @@
+.user_search, .user__result--container{
+    width: 50%;
+    margin: 24px auto auto;
+}
+.user__result--tile{
+    margin: 0 0 8px 0;
+}
+.user_search label{
+    font-weight: 600;
+}
+.user_search_button {
+    background-color: #2ea44f;
+    color: #fff;
+    padding: 5px 16px;
+    font-size: 14px;
+    border: 1px solid;
+    border-radius: 6px;
+}
+@media (max-width: 768px) {
+    .user_search, .user__result--container{
+        width: 100%;
+        margin: 16px auto auto;
+    }
+}

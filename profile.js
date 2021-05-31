@@ -3,7 +3,7 @@ const username = search.split('=')[1]
 
 fetch('https://api.github.com/graphql', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', authorization: `Bearer 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` },
+    headers: { 'Content-Type': 'application/json', authorization: `Bearer xxxx` },
     body: JSON.stringify({ query: `
     query {
         user(login: "${username}") {
